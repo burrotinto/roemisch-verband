@@ -1,0 +1,113 @@
+############################################################
+##
+## Bedingungen
+##
+##################################
+B1MaximaleFugenlaenge=true
+
+#############
+B2KeineKreuze=true
+
+#############
+B3KeineGleichen=true
+
+#############
+B4KeineErsetzungen=true
+
+############################################################
+##
+## Sollen die Bedingungen als Stream gehandhabt werden oder mittels Listen uebergabe?
+##
+##################################
+BedingungenAlsStream=true
+
+############################################################
+##
+## LoesungsAlgorithmen
+## wenn keiner ausgewaehlt wird der Standard-Rekurisiv-Backtrack benutzt
+##
+##################################
+AutoLoeserAuswahl=true
+
+#############
+#StandardRekurisivBacktrack=true;
+
+#############
+#MultiThreading=true
+
+#############
+## Es wird der StandardRekurisivBacktrack benutzt der gleichzeitig auf eine Grafische Oberflaeche gezeichnet wird
+## mit 'w' kann die Ausgabe beschleunigt werden und mit 's' wird es langsamer 
+#Visual=true
+
+############################################################
+##
+## Sortier Heuristiken
+## Gibt die Reihenfolge an wie die Fliesen ausgewaehlt werden 
+##
+##################################
+#AutoHeuristik=true
+
+#ZuerstDieAmMeisten=true
+
+#############
+GroesseteZuerst=true
+
+#############
+#KleinsteZuerst=true
+
+#############
+#Random=true
+
+
+############################################################
+##
+## Naechster Punkt Heuristiken
+## Wie der Naechste Freie Punkt zu finden ist
+##
+##################################
+## Verlegt immer von der derzeit kleineren Seite aus
+NaechsteFreieStelleIntelligent=true
+
+#############
+##Auswahl nach Flaechenabmessung betrachtet das Feld von der kuerzeren Seite aus.
+#AuswahlNaechsteFreieStelleAnhandFlaechenabmessung=true
+
+#############
+#StandardNaechsterPunkt=true
+
+#############
+#NaechsteFreieStelleZeile=true
+
+#############
+#NaechsteFreieStelleSpalte=true
+
+
+############################################################
+##
+## Soll der MultiThreadLoser seine Zwischenloesungen auf die Festplatte auslagern?
+## Dabei wird im Vergleich zum normalen Pufferspeicher KEINE StackHeuristiken benutzt, sondern per Zufall ausgewaehlt und
+## es werden KEINE teilgeloesten Listen geloescht um einer Exception zuvorzukommen.
+## 
+##################################
+#PufferMitSpeicher=true
+
+############################################################
+##
+## Multi Threading Stack Auswahl Heuristiken
+## wird bei eingeschaltenen MultiThreading benutzt um den Ablagestapel zu organisieren. Wobei der Stapel eine Liste ist
+##
+##################################
+#MultiThreadingStackFIFO=true
+
+#MultiThreadingStackLIFO=true
+
+MultiThreadingStackRandom=true
+
+#MultiThreadingStackMiddle=true
+
+## Wechselt zwischen FIFO, Middle, LIFO, Random und NextToFull
+#MultiThreadingStackChange=true
+
+## Sortiert den Stapel nach den groessten Eintraegen der Sublisten und gibt die mit der Flaeche mit dem groﬂten Fuellstand aus.
+#MultiThreadingStackNextToFull=true
